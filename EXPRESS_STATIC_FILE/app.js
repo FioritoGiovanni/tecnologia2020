@@ -2,7 +2,7 @@ var express = require('express');
 var app = express(); 
 const path = require('path');
 //assuming app is express Object.
-app.get('/', function(req,res) {
+app.get('/api', function(req,res) {
  res.sendFile('/workspace/tecnologia2020/EXPRESS_STATIC_FILE/' ,'index.html');
 });
 
