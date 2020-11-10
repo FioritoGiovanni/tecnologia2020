@@ -1,0 +1,10 @@
+<div>
+  <button (click)='evento()'>CLICK PER VISUALIZZARE I DATI</button>
+  <ul *ngFor="let item of results">
+    <li ><p><b>nome prodotto:</b> {{item.product_name}}</p></li>
+    <li><p><b>fornitore: </b>{{item.supplier}}</p></li>
+    <li><p><b>quantità: </b>{{item.quantity}}</p></li>
+    <li><p><b>costo unitario:</b> {{item.unit_cost}}</p></li>
+    <li><hr></li>
+  </ul>
+</div>
