@@ -1,0 +1,13 @@
+
+
+<button class='btn btn-primary' (click)="load10Movies()">Carica 10 film</button>
+<div class='card-columns'>
+  <div *ngFor="let movie of results" class='card'>
+    <hr>
+    <img class='card-img-top' [src]="photoURL(movie.poster)">
+    <div class='card-body  text-center' >
+    <h1 class='card-title'>{{movie.title}}</h1>
+    <p class='card-text'>{{movie.fullplot}}</p>
+  </div>
+</div>
+
