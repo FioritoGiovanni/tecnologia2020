@@ -1,5 +1,10 @@
 <h1>RICERCA CIBO</h1>
 <p>
 <input type="text" #newquery>
-<button>SEARCH</button>
+<button (click)="submit(newquery)">SEARCH</button>
 </p>
+<div *ngFor="let cibo of results.products">
+  <img  src="{{cibo.image_small_url}}" alt="immagine">
+<p><a [routerLink]="['/item',cibo.id]">{{cibo.product_name_fr}}</a> </p>
+
+</div>
